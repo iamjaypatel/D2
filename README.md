@@ -1,5 +1,5 @@
 # CS 1632 - DELIVERABLE 2: Unit Testing Ruby Rush
--Name: Jay Patel
+Name: Jay Patel
 
--Pitt Username: jjp107
+Pitt Username: jjp107
 
