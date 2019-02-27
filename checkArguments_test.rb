@@ -22,3 +22,10 @@ class checkArgumentsTest < Minitest::Test
     args = CheckArguments.new
     assert_equal false, args.checkArguments([2])
   end
+
+  # Test that fails if string is entered as an argument
+  def test_check_string_agrument
+    args = CheckArguments.new
+    assert_equal false, args.checkArguments(['CHECKSTRING'])
+  end
+end
