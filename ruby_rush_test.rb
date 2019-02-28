@@ -5,3 +5,4 @@ require 'simplecov'
 SimpleCov.start
 
 require_relative 'check_argument_test'
+require_relative 'map_test'
