@@ -7,5 +7,6 @@
 
   - To run all the tests use:
     <code> ruby ruby_rush_test.rb </code>
+      - SimpleCov files will be created, in a new folder named 'coverage'
   -   To run individual test use:
     <code> ruby xxx.rb </code> (replace xxx with designated file name).
