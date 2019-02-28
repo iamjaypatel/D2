@@ -5,4 +5,7 @@
 
 # Instructions to run the tests
 
-  - run all the tests using ruby ruby_rush_test.rb
+  - To run all the tests use:
+      - ruby ruby_rush_test.rb
+  -   To run individual test use:
+      - ruby xxx.rb (replace xxx with designated file name).
