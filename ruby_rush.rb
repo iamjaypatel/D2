@@ -3,8 +3,9 @@
 # with 3 arguments, the seed, number of prospectors,
 # and the number of turns.
 
+# class for Arguments
 class CheckArguments
-  def check_Arguments(args)
+  def check_arguments(args)
     args.count == 3 && args[0].to_i > 0 && args[1].to_i > 0 && args[2].to_i > 0
   rescue StandardError
     false
@@ -13,7 +14,7 @@ end
 
 # Program Starts HERE
 arg = CheckArguments.new
-good_arguments = arg.check_Arguments ARGV
+good_arguments = arg.check_arguments ARGV
 
 if good_arguments
   seed = ARGV[0].to_i
