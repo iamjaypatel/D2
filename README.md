@@ -6,6 +6,6 @@
 # Instructions to run the tests
 
   - To run all the tests use:
-      - <code> ruby ruby_rush_test.rb </code>
+    <code> ruby ruby_rush_test.rb </code>
   -   To run individual test use:
-      - ruby xxx.rb (replace xxx with designated file name).
+    <code> ruby xxx.rb </code> (replace xxx with designated file name).
