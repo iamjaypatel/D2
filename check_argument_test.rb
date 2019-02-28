@@ -1,8 +1,3 @@
-# Note that we require and start simplecov before
-# doing ANYTHING else, including other require statements.
-require 'simplecov'
-SimpleCov.start
-
 # Check Arguments Test
 require 'minitest/autorun'
 
