@@ -1,38 +1,17 @@
 {
   "MiniTest": {
     "coverage": {
-      "/Users/jaypatel/Desktop/College Work/CS 1632/Deliverables/2/D2/ruby_rush.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
+      "/Users/jaypatel/Desktop/College Work/CS 1632/Deliverables/2/D2/check_argument.rb": [
         null,
         1,
         1,
-        10,
+        9,
         null,
         0,
         null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
         null
       ]
     },
-    "timestamp": 1551314356
+    "timestamp": 1551314615
   }
 }

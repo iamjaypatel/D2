@@ -2,15 +2,7 @@
 # Execute using ruby ruby_rush.rb
 # with 3 arguments, the seed, number of prospectors,
 # and the number of turns.
-
-# class for Arguments
-class CheckArguments
-  def check_arguments(args)
-    args.count == 3 && args[0].to_i > 0 && args[1].to_i > 0 && args[2].to_i > 0
-  rescue StandardError
-    false
-  end
-end
+require_relative 'check_argument'
 
 # Program Starts HERE
 arg = CheckArguments.new

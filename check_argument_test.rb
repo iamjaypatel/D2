@@ -6,7 +6,7 @@ SimpleCov.start
 # Check Arguments Test
 require 'minitest/autorun'
 
-require_relative 'ruby_rush.rb'
+require_relative 'check_argument'
 
 # Classes to test checkArguments class
 class CheckArgumentsTest < Minitest::Test
