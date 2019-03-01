@@ -1,5 +1,5 @@
 # map, class file that sets up the city on a map and its index
-class Map
+class MapGraph
   # Method: this gets the index and city
   def get_index_and_city_name(city)
     index = if city == 'Enumerable Canyon'
