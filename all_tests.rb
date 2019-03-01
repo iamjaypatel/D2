@@ -7,3 +7,4 @@ SimpleCov.start
 require_relative 'check_argument_test'
 require_relative 'map_graph_test'
 require_relative 'prospector_test'
+require_relative 'player_test'
