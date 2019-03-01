@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.10.2/application.js' type='text/javascript'></script>    
     <link href='./assets/0.10.2/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/png" href="./assets/0.10.2/favicon_green.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.10.2/favicon_red.png" />
     <link rel="icon" type="image/png" href="./assets/0.10.2/favicon.png" />
   </head>
   
@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-02-28T20:52:48-05:00">2019-02-28T20:52:48-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-02-28T23:01:20-05:00">2019-02-28T23:01:20-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">90.41%</span></span>
+    (<span class="covered_percent"><span class="red">53.28%</span></span>
      covered at
      <span class="covered_strength">
-       <span class="green">
-         1.45
+       <span class="red">
+         0.81
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>6</b> files in total.
-    <b>73</b> relevant lines. 
-    <span class="green"><b>66</b> lines covered</span> and
-    <span class="red"><b>7</b> lines missed </span>
+    <b>137</b> relevant lines. 
+    <span class="green"><b>73</b> lines covered</span> and
+    <span class="red"><b>64</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -71,7 +71,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#dfe379052aea74f7d9dd697ebe1b6bbb9694e606" class="src_link" title="map.rb">map.rb</a></td>
+        <td class="strong"><a href="#33f1fb5f6cea30cea854228720beec570af4bdff" class="src_link" title="map_graph.rb">map_graph.rb</a></td>
         <td class="red strong">64.71 %</td>
         <td>22</td>
         <td>17</td>
@@ -81,7 +81,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#36b94077f76f9c36928a87b455ea5d7f1bb4d9bb" class="src_link" title="map_test.rb">map_test.rb</a></td>
+        <td class="strong"><a href="#703728742ecdd989d978e74b75bb0b2fafd47688" class="src_link" title="map_graph_test.rb">map_graph_test.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>36</td>
         <td>18</td>
@@ -92,12 +92,12 @@
       
       <tr>
         <td class="strong"><a href="#7ccd8c019921b9f65fdd1892e6d7a29efc950dfa" class="src_link" title="prospector.rb">prospector.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>4</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1.0</td>
+        <td class="red strong">12.31 %</td>
+        <td>102</td>
+        <td>65</td>
+        <td>8</td>
+        <td>57</td>
+        <td>0.1</td>
       </tr>
       
       <tr>
@@ -596,9 +596,9 @@
 </div>
 
       
-        <div class="source_table" id="dfe379052aea74f7d9dd697ebe1b6bbb9694e606">
+        <div class="source_table" id="33f1fb5f6cea30cea854228720beec570af4bdff">
   <div class="header">
-    <h3>map.rb</h3>
+    <h3>map_graph.rb</h3>
     <h4><span class="red">64.71 %</span> covered</h4>
     <div>
       <b>17</b> relevant lines. 
@@ -619,7 +619,7 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">class Map</code>
+          <code class="ruby">class MapGraph</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="3">
@@ -747,9 +747,9 @@
 </div>
 
       
-        <div class="source_table" id="36b94077f76f9c36928a87b455ea5d7f1bb4d9bb">
+        <div class="source_table" id="703728742ecdd989d978e74b75bb0b2fafd47688">
   <div class="header">
-    <h3>map_test.rb</h3>
+    <h3>map_graph_test.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>18</b> relevant lines. 
@@ -770,7 +770,7 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">require_relative &#39;map&#39;</code>
+          <code class="ruby">require_relative &#39;map_graph&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="3">
@@ -812,7 +812,7 @@
         <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
-          <code class="ruby">    answer = Map.new</code>
+          <code class="ruby">    answer = MapGraph.new</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="10">
@@ -848,7 +848,7 @@
         <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
-          <code class="ruby">    answer = Map.new</code>
+          <code class="ruby">    answer = MapGraph.new</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="16">
@@ -884,7 +884,7 @@
         <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
-          <code class="ruby">    answer = Map.new</code>
+          <code class="ruby">    answer = MapGraph.new</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="22">
@@ -920,7 +920,7 @@
         <li class="covered" data-hits="1" data-linenumber="27">
           <span class="hits">1</span>
           
-          <code class="ruby">    answer = Map.new</code>
+          <code class="ruby">    answer = MapGraph.new</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="28">
@@ -956,7 +956,7 @@
         <li class="covered" data-hits="1" data-linenumber="33">
           <span class="hits">1</span>
           
-          <code class="ruby">    answer = Map.new</code>
+          <code class="ruby">    answer = MapGraph.new</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="34">
@@ -985,11 +985,11 @@
         <div class="source_table" id="7ccd8c019921b9f65fdd1892e6d7a29efc950dfa">
   <div class="header">
     <h3>prospector.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="red">12.31 %</span> covered</h4>
     <div>
-      <b>1</b> relevant lines. 
-      <span class="green"><b>1</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>65</b> relevant lines. 
+      <span class="green"><b>8</b> lines covered</span> and
+      <span class="red"><b>57</b> lines missed.</span>
     </div>
   </div>
   
@@ -1011,10 +1011,598 @@
         <li class="never" data-hits="" data-linenumber="3">
           
           
+          <code class="ruby">  # Initialize</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def initialize(map, map_graph)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
+          
+          <code class="ruby">    @map = map</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="6">
+          
+          
+          <code class="ruby">    @map_graph = map_graph</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="7">
+          
+          
+          <code class="ruby">    @real_rubies_total = 0</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
+          
+          <code class="ruby">    @fake_rubies_total = 0</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
+          
+          <code class="ruby">    @location_visited = 1</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
+          
+          <code class="ruby">    @no_of_days = 0</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="11">
+          
+          
+          <code class="ruby">    set_ruby_table</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  # Method that initalizes table with gold/silver possibilities</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  # Index 0 is Max Rubies, Index 1 is fake rubies</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def set_ruby_table</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="17">
+          
+          
+          <code class="ruby">    @table = [[1, 1], [2, 2], [1, 1], [0, 3], [3, 0], [2, 2], [2, 2]]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  # Method for searching for rubies</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def search(start, city)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="22">
+          
+          
+          <code class="ruby">     start = start.to_i</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="23">
+          
+          
+          <code class="ruby">     city = city.to_i</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="24">
+          
+          
+          <code class="ruby">     return nil if start &lt; 0 || city &lt; 0 || city &gt;= 7</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="26">
+          
+          
+          <code class="ruby">     pass = 1</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="27">
+          
+          
+          <code class="ruby">     if start &lt; 6</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="28">
+          
+          
+          <code class="ruby">       loop do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="29">
+          
+          
+          <code class="ruby">           @no_of_days += 1</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="30">
+          
+          
+          <code class="ruby">           real_rubies = rand(@table[city][0]).to_i</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">            puts &quot;      Found #{real_rubies} real ruby</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="32">
+          
+          
+          <code class="ruby">            in #{@map[city][0]}&quot; if real_rubies == 1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">            puts &quot;      Found #{real_rubies} real rubies</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="35">
+          
+          
+          <code class="ruby">            in #{@map[city][0]}&quot; if real_rubies &gt; 1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="37">
+          
+          
+          <code class="ruby">            @real_rubies_total += real_rubies</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="38">
+          
+          
+          <code class="ruby">            fake_rubies = rand(@table[city][1]).to_i</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="39">
+          
+          
+          <code class="ruby">            puts &quot;      Found #{fake_rubies} fake ruby in #{@map[city][0]}&quot; if fake_rubies == 1</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="40">
+          
+          
+          <code class="ruby">            puts &quot;      Found #{fake_rubies} fake rubies in #{@map[city][0]}&quot; if fake_rubies &gt; 1</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="41">
+          
+          
+          <code class="ruby">            @fake_rubies_total += fake_rubies</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="42">
+          
+          
+          <code class="ruby">            puts &quot;      Found no rubies in #{@map[city][0]}&quot; if real_rubies.zero? &amp;&amp; fake_rubies.zero?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="43">
+          
+          
+          <code class="ruby">            break if real_rubies.zero? &amp;&amp; fake_rubies.zero?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby">          end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="46">
+          
+          
+          <code class="ruby">      pass</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
+          
+          
+          <code class="ruby">  # Method that picks the prospectors next location</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="50">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def pick_next_location(current_city, seed)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="51">
+          
+          
+          <code class="ruby">      current_city = current_city.to_i</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="52">
+          
+          
+          <code class="ruby">      return nil if current_city &lt; 0 || current_city &gt;= 7</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="53">
+          
+          
+          <code class="ruby">      range = 1</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="54">
+          
+          
+          <code class="ruby">      range = @map[current_city].length - 1 unless @map[current_city].length &lt;= 1</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="55">
+          
+          
+          <code class="ruby">      next_city = random_number(seed, range).to_i</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="56">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="57">
+          
+          
+          <code class="ruby">      next_city += 1 if next_city.zero?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="58">
+          
+          
+          <code class="ruby">      return nil if next_city.nil?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="59">
+          
+          
+          <code class="ruby">      if @visited_locations &lt; 5</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="60">
+          
+          
+          <code class="ruby">        print &quot;Heading from #{@map[current_city][0]} to #{@map[current_city][next_city]}&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="61">
+          
+          
+          <code class="ruby">        print &quot;, holding #{@real_rubies_total} real rubies and #{@fake_rubies_total} fake rubies.&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="62">
+          
+          
+          <code class="ruby">        puts</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="64">
+          
+          
+          <code class="ruby">      # Gets next_city location on map to return</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="65">
+          
+          
+          <code class="ruby">      @location_visited += 1</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="66">
+          
+          
+          <code class="ruby">      city = @map_graph.get_index_and_city_name(@map[current_city][next_city])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="67">
+          
+          
+          <code class="ruby">      city</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="68">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="69">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="70">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def no_of_location</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="71">
+          
+          
+          <code class="ruby">      1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="72">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="73">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="74">
+          
+          
+          <code class="ruby">  # Method to display prospectors results</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="75">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def see_results(prospector)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="76">
+          
+          
+          <code class="ruby">    prospector = prospector.to_i</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="77">
+          
+          
+          <code class="ruby">    return nil if prospector &lt;= 0</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="78">
+          
+          
+          <code class="ruby">    puts &quot;\n\n&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="79">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="80">
+          
+          
+          <code class="ruby">    puts &quot;After #{@no_of_days} days prospector ##{prospector} returned to San Francisco with:&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="81">
+          
+          
+          <code class="ruby">    if @real_rubies_total == 1</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="82">
+          
+          
+          <code class="ruby">      puts &quot;      #{@real_rubies_total} ounce of silver&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="83">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="84">
+          
+          
+          <code class="ruby">      puts &quot;      #{@real_rubies_total} ounces of silver&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="85">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="86">
+          
+          
+          <code class="ruby">    if @fake_rubies_total == 1</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="87">
+          
+          
+          <code class="ruby">      puts &quot;      #{@fake_rubies_total} ounce of gold&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="88">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="89">
+          
+          
+          <code class="ruby">      puts &quot;      #{@fake_rubies_total} ounces of gold&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="90">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="91">
+          
+          
+          <code class="ruby">    1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="92">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="93">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="94">
+          
+          
+          <code class="ruby">  # Generate Random No</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="95">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def generate_random_no(seed, range)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="96">
+          
+          
+          <code class="ruby">    seed = seed.to_i</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="97">
+          
+          
+          <code class="ruby">    return nil if seed &lt;= 0</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="98">
+          
+          
+          <code class="ruby">    range1 = Random.new(seed)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="99">
+          
+          
+          <code class="ruby">    number = range1,rand(range) + 1</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="100">
+          
+          
+          <code class="ruby">    number</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="101">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="102">
           
           
           <code class="ruby">end</code>
