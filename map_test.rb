@@ -23,14 +23,14 @@ class MapTest < Minitest::Test
   end
 
   # Test invalid city name
-  def test_city_name
-      answer = Map.new
-      assert_nil answer.get_index_and_city_name('Pittsburgh')
+  def test_invalid_city_name
+    answer = Map.new
+    assert_nil answer.get_index_and_city_name('Pittsburgh')
   end
 
   # Test valid city name, with index
-  def test_city_name
-      answer = Map.new
-      assert_equal 6, answer.get_index_and_city_name('Dynamic Palisades')
+  def test_valid_city_name
+    answer = Map.new
+    assert_equal 6, answer.get_index_and_city_name('Dynamic Palisades')
   end
 end
