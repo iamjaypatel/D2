@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'map'
+require_relative 'map_graph'
 
 # Test for Class map, file.
 class MapTest < Minitest::Test
