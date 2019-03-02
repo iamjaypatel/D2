@@ -1,14 +1,9 @@
 # Jay Patel, CS 1632 D2
-# Execute using ruby ruby_rush.rb
-# with 3 arguments, the seed, number of prospectors,
-# and the number of turns.
 require_relative 'check_argument'
 require_relative 'player'
-
 # Program Starts HERE
 arg = CheckArguments.new
 good_arguments = arg.check_arguments ARGV
-
 if good_arguments
   seed = ARGV[0].to_i
   num_prospectors = ARGV[1].to_i
