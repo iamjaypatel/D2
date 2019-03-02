@@ -47,7 +47,8 @@ class Player
     while run_prospector_counter < no_turn && num_prospector > 0
       search.find(run_prospector_counter, y)
       run_prospector_counter += search.no_of_location
-      y = search.pick_next_city(y, @seed) unless run_prospector_counter > no_turn
+      y = search.pick_next_city(y, @seed) unless
+        run_prospector_counter > no_turn
       result = run_prospector_counter
     end
     result

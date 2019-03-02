@@ -15,19 +15,25 @@ class Prospector
     iteration = iteration.to_i
     city = city.to_i
     return nil if iteration < 0 || city < 0 || city >= 7
+
     success = 1
     if iteration < 6
       loop do
         @num_days += 1
         real_rubies = rand(@table[city][0]).to_i
-        puts "      Found #{real_rubies} ruby in #{@map[city][0]}." if real_rubies == 1
-        puts "      Found #{real_rubies} rubies in #{@map[city][0]}." if real_rubies > 1
+        puts "      Found #{real_rubies} ruby in #{@map[city][0]}." if
+          real_rubies == 1
+        puts "      Found #{real_rubies} rubies in #{@map[city][0]}." if
+          real_rubies > 1
         @rubies_total += real_rubies
         fake_rubies = rand(@table[city][1]).to_i
-        puts "      Found #{fake_rubies} fake ruby in #{@map[city][0]}." if fake_rubies == 1
-        puts "      Found #{fake_rubies} fake rubies in #{@map[city][0]}." if fake_rubies > 1
+        puts "      Found #{fake_rubies} fake ruby in #{@map[city][0]}." if
+          fake_rubies == 1
+        puts "      Found #{fake_rubies} fake rubies in #{@map[city][0]}." if
+          fake_rubies > 1
         @fake_rubies_total += fake_rubies
-        puts "      Found no rubies or fake rubies in #{@map[city][0]}." if real_rubies.zero? && fake_rubies.zero?
+        puts "      Found no rubies or fake rubies in #{@map[city][0]}." if
+          real_rubies.zero? && fake_rubies.zero?
         break if real_rubies.zero? && fake_rubies.zero?
       end
     end
@@ -38,6 +44,7 @@ class Prospector
   def gen_rand_num(seed, range)
     seed = seed.to_i
     return nil if seed <= 0
+
     rng2 = Random.new(seed)
     num = rng2.rand(range) + 1
     num
@@ -47,14 +54,17 @@ class Prospector
   def pick_next_city(curr_city, seed)
     curr_city = curr_city.to_i
     return nil if curr_city < 0 || curr_city >= 7
+
     range = 1
     range = @map[curr_city].length - 1 unless @map[curr_city].length <= 1
     next_city = gen_rand_num(seed, range).to_i
 
     next_city += 1 if next_city.zero?
     return nil if next_city.nil?
+
     if @cities_visited < 6
-      print "Heading from #{@map[curr_city][0]} to #{@map[curr_city][next_city]}."
+      print "Heading from #{@map[curr_city][0]} to
+        #{@map[curr_city][next_city]}."
       puts
     end
     # Gets next_city location on map to return
@@ -80,6 +90,7 @@ class Prospector
   def print_end(prospector)
     prospector = prospector.to_i
     return nil if prospector <= 0
+
     puts "After #{@num_days} days Rubyist ##{prospector} found:"
     if @rubies_total == 1
       puts "      #{@rubies_total} ruby"
@@ -92,11 +103,11 @@ class Prospector
       puts "      #{@fake_rubies_total} fake rubies"
     end
     if @rubies_total >= 10
-      puts "Going home victorious!"
-    elsif @rubies_total == 0
-      puts "Going home empty-handed."
+      puts 'Going home victorious!'
+    elsif @rubies_total.zero?
+      puts 'Going home empty-handed.'
     elsif @rubies_total >= 1 || @rubies_total <= 9
-      puts "Going home sad"
+      puts 'Going home sad'
     end
     puts "\n\n"
     1
