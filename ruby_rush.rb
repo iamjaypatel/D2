@@ -8,7 +8,7 @@ if good_arguments
   seed = ARGV[0].to_i
   num_prospectors = ARGV[1].to_i
   num_turns = ARGV[2].to_i
-  @player = Player.new(seed,num_prospectors, num_turns)
+  @player = Player.new(seed, num_prospectors, num_turns)
   @player.explore
 else
   puts 'Usage: '
