@@ -3,7 +3,7 @@
   - Name: Jay Patel
   - Pitt Username: jjp107
 
-# Instructions to run the tests
+# Notes
 
   - To run all the tests use:
     <code> ruby all_tests.rb </code>
