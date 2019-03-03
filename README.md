@@ -13,5 +13,5 @@
       - SimpleCov files will not be created.
   - Coverage is 92.98%
   - Rubocop:
-      - All files with <code>*.rb</code> extension pass with provided
+      - All files without <code>*_test.rb</code> extension pass with provided
       <code>.rubocop.yml</code> file.
