@@ -28,7 +28,7 @@ class Player
       ['Enumerable Canyon', 'Duck Type Beach', 'Monkey Patch City'],
       ['Duck Type Beach', 'Matzburg', 'Enumerable Canyon'],
       ['Monkey Patch City', 'Nil Town', 'Matzburg', 'Enumerable Canyon'],
-      ['Nil Town', 'Monkey Patch City'],
+      ['Nil Town', 'Monkey Patch City', 'Hash Crossing'],
       ['Matzburg', 'Monkey Patch City', 'Duck Type Beach', 'Hash Crossing',
        'Dynamic Palisades'],
       ['Hash Crossing', 'Matzburg', 'Dynamic Palisades', 'Nil Town'],
