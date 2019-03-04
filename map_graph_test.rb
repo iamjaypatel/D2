@@ -3,6 +3,14 @@ require_relative 'map_graph'
 
 # Test for Class map, file.
 class MapTest < Minitest::Test
+  # UNIT TESTS FOR METHOD get_index_and_city_name(city) in MapGraph Class
+  # Equivalence classes:
+  # city = -INFINITY..-1 -> returns nil
+  # city = 1..INFINITY -> returns nil
+  # city = valid city name -> returns index of city in array (as integer)
+  # city = invalid city name -> returns nil
+  # city = 0 -> returns nil
+
   # Test numbers as an input
   # Test - Negative number
   def test_neg_number_as_city_name

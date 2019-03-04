@@ -3,6 +3,14 @@ require_relative 'prospector'
 
 # Test for Class map, file.
 class ProspectorTest < Minitest::Test
+  # UNIT TESTS FOR METHOD gen_rand_number(seed, range) in Prospector Class
+  # Equivalence classes:
+  # seed = -INFINITY..-1 -> returns nil
+  # seed = 1..INFINITY -> returns pseudorandom number, that will always be the
+  # same for the same seed
+  # seed = (not a number) -> returns nil
+  # seed = 0 -> returns nil
+
   # Test that negative numbers returns nil. This is also based on requirement 1
   # in that all seeds must be a non-negative positive integer.
   # EDGE CASE
@@ -77,18 +85,18 @@ class ProspectorTest < Minitest::Test
     assert_equal 80, count
   end
 
-  # UNIT TESTS FOR METHOD find(iteration,city) in Prospector Class
+  # UNIT TESTS FOR METHOD find(start,city) in Prospector Class
   # Equivalence classes:
-  # iteration = -INFINITY..-1 -> returns nil
-  # iteration = 1..INFINITY -> returns 1, and mining goes as expected
-  # iteration = 0 -> returns 1, and mining goes as expected
+  # start = -INFINITY..-1 -> returns nil
+  # start = 1..INFINITY -> returns 1, and searching goes as expected
+  # start = 0 -> returns 1, and searching goes as expected
   # city = -INFINITY..-1 -> returns nil
-  # city = 1..INFINITY -> returns 1, and mining goes as expected
-  # city = 0 -> returns 1, and mining goes as expected
+  # city = 1..INFINITY -> returns 1, and searching goes as expected
+  # city = 0 -> returns 1, and searching goes as expected
 
   # Tests that negative itetation returns nil
   # EDGE CASE
-  def test_negative_iteration_mine
+  def test_negative_start_search
     test_map = Minitest::Mock.new('Mock Map')
     test_map_graph = Minitest::Mock.new('Mock Map')
     search = Prospector.new(test_map, test_map_graph)
@@ -97,15 +105,15 @@ class ProspectorTest < Minitest::Test
 
   # Tests that 0 itetation returns 1
   # EDGE CASE
-  def test_zero_iteration_mine
+  def test_zero_start_search
     test_map = Minitest::Mock.new('Mock Map')
     test_map_graph = Minitest::Mock.new('Mock Map')
     search = Prospector.new(test_map, test_map_graph)
     assert_equal 1, search.find(0, 1)
   end
 
-  # Tests that valid iteration input < 4 returns 1
-  def test_iteration_mine_passes_less_than_four
+  # Tests that valid start input < 4 returns 1
+  def test_start_search_passes_less_than_four
     test_map = Minitest::Mock.new('Mock Map')
     test_map_graph = Minitest::Mock.new('Mock Map')
     search = Prospector.new(test_map, test_map_graph)
@@ -114,16 +122,16 @@ class ProspectorTest < Minitest::Test
 
   # Tests that valid input = 4 returns 1
   # EDGE CASE
-  def test_iteration_mine_passes_equal_four
+  def test_start_search_passes_equal_four
     test_map = Minitest::Mock.new('Mock Map')
     test_map_graph = Minitest::Mock.new('Mock Map')
     search = Prospector.new(test_map, test_map_graph)
     assert_equal 1, search.find(4, 1)
   end
 
-  # Tests that valid iteration input = 4 returns 1
+  # Tests that valid start input = 4 returns 1
   # EDGE CASE
-  def test_iteration_mine_passes_greater_than_four
+  def test_start_search_passes_greater_than_four
     test_map = Minitest::Mock.new('Mock Map')
     test_map_graph = Minitest::Mock.new('Mock Map')
     search = Prospector.new(test_map, test_map_graph)
@@ -132,7 +140,7 @@ class ProspectorTest < Minitest::Test
 
   # Tests that negative city value returns nil
   # EDGE CASE
-  def test_negative_city_mine
+  def test_negative_city_search
     test_map = Minitest::Mock.new('Mock Map')
     test_map_graph = Minitest::Mock.new('Mock Map')
     search = Prospector.new(test_map, test_map_graph)
@@ -141,7 +149,7 @@ class ProspectorTest < Minitest::Test
 
   # Tests that 0 city value returns 1
   # EDGE CASE
-  def test_zero_city_mine
+  def test_zero_city_search
     test_map = Minitest::Mock.new('Mock Map')
     test_map_graph = Minitest::Mock.new('Mock Map')
     search = Prospector.new(test_map, test_map_graph)
@@ -150,7 +158,7 @@ class ProspectorTest < Minitest::Test
 
   # Tests that 7 city value returns nil
   # EDGE CASE
-  def test_seven_city_mine
+  def test_seven_city_search
     test_map = Minitest::Mock.new('Mock Map')
     test_map_graph = Minitest::Mock.new('Mock Map')
     search = Prospector.new(test_map, test_map_graph)
@@ -158,7 +166,7 @@ class ProspectorTest < Minitest::Test
   end
 
   # Tests that valid city value returns 1
-  def test_passes_city_mine
+  def test_passes_city_search
     test_map = Minitest::Mock.new('Mock Map')
     test_map_graph = Minitest::Mock.new('Mock Map')
     search = Prospector.new(test_map, test_map_graph)

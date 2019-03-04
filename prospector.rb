@@ -11,13 +11,13 @@ class Prospector
   end
 
   # Method to search for rubies at a location
-  def find(iteration, city)
-    iteration = iteration.to_i
+  def find(start, city)
+    start = start.to_i
     city = city.to_i
-    return nil if iteration < 0 || city < 0 || city >= 7
+    return nil if start < 0 || city < 0 || city >= 7
 
     success = 1
-    if iteration < 6
+    if start < 6
       loop do
         @num_days += 1
         real_rubies = rand(@table[city][0]).to_i

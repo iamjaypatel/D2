@@ -5,6 +5,13 @@ require_relative 'check_argument'
 
 # Classes to test checkArguments class
 class CheckArgumentsTest < Minitest::Test
+  # UNIT TESTS FOR METHOD check_arguments(args)
+  # Equivalence classes:
+  # args= [-INFINITY..-1,-INFINITY..-1] -> returns false
+  # args= [1..INFINITY,1..INFINITY] -> returns true
+  # args= (not a number) -> returns false
+  # args= [0,0] -> returns false
+
   # Test that No Arguments fail
   def test_check_invalid_arguments
     answer = CheckArguments.new

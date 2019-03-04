@@ -3,7 +3,18 @@ require_relative 'player'
 
 # Test Class for player.rb
 class PlayerTest < Minitest::Test
-  # Test that negative value for prospector_count returns nil
+  # UNIT TESTS FOR METHOD run_prospector(num_prospector,search, num_turns) in Simulator Class
+  # Equivalence classes:
+  # num_prospector = -INFINITY..-1 -> returns nil
+  # num_prospector = 1..INFINITY -> returns 1, snd tuns simulation as expected
+  # going to 5 locations
+  # num_prospector = (not a number) -> returns nil
+  # num_prospector = 0 -> returns nil
+  # search = Object of type Prospector -> returns 1
+  # search = Object not of type Prospector -> returns nil
+  # num_turns = Number of turns that the prospector has to make.
+
+  # Test that negative value for num_prospector returns nil
   # EDGE CASE
   def test_run_neg_prospector
     answer = Player.new(1, 2, 3)
@@ -23,7 +34,7 @@ class PlayerTest < Minitest::Test
     assert_nil answer.run_prospector(-1, test_prospector, 1)
   end
 
-  # Test that string value for prospector_count returns nil
+  # Test that string value for num_prospector returns nil
   def test_run_string_prospector
     answer = Player.new(1, 2, 3)
     answer.map_setup
@@ -42,7 +53,7 @@ class PlayerTest < Minitest::Test
     assert_nil answer.run_prospector('HI', test_prospector, 1)
   end
 
-  # Test that a value of zero for prospector_count returns nil
+  # Test that a value of zero for num_prospector returns nil
   # EDGE CASE
   def test_run_zero_prospector
     answer = Player.new(1, 2, 3)
@@ -62,7 +73,7 @@ class PlayerTest < Minitest::Test
     assert_nil answer.run_prospector(0, test_prospector, 1)
   end
 
-  # Tests that non-negative int value for prospector_count returns a 5. Then
+  # Tests that non-negative int value for num_prospector returns a 5. Then
   # continues normal behavior and runs the simulation as expected.
   # The 5 represents a successful reach of 5 locations
   def test_run_prospector_passes
