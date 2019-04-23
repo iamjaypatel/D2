@@ -15,3 +15,5 @@
   - Rubocop:
       - All files without <code>*_test.rb</code> passed with provided
       <code>.rubocop.yml</code> file.
+# Grade
+- 86/100
